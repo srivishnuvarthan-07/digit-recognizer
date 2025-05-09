@@ -261,12 +261,12 @@ __________________________________________________________
 __________________________________________________________
 
 import java.sql.*;
-public class JDBCExample {
+public class FileDemo {
     public static void main(String[] args) {
         // Database connection details
-        String url = "jdbc:mysql://localhost:3306/yourDatabase"; // replace 'yourDatabase' with your DB name
+        String url = "jdbc:mysql://localhost:3306/todo_app"; // replace 'yourDatabase' with your DB name
         String username = "root"; // replace with your MySQL username
-        String password = "password"; // replace with your MySQL password
+        String password = "vishnu"; // replace with your MySQL password
 
         // Establish connection
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
@@ -276,12 +276,12 @@ public class JDBCExample {
             Statement stmt = conn.createStatement();
 
             // Execute a query to retrieve data
-            String query = "SELECT * FROM yourTable"; // replace 'yourTable' with your table name
+            String query = "SELECT * FROM todo"; // replace 'yourTable' with your table name
             ResultSet rs = stmt.executeQuery(query);
 
             // Process the result
             while (rs.next()) {
-                System.out.println("ID: " + rs.getInt("id") + ", Name: " + rs.getString("name"));
+                System.out.println("ID: " + rs.getInt("id") + ", Name: " + rs.getString("task"));
             }
         } catch (SQLException e) {
             System.out.println("Database connection failed: " + e.getMessage());
