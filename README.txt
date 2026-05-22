@@ -8,6 +8,8 @@ DESCRIPTION
 This project uses a pre-trained ONNX model to predict handwritten digits. Users can draw digits
 on a canvas and get real-time predictions.
 
+![DIGIT RECOGNIZER] (https://github.com/srivishnuvarthan-07/digit-recognizer/blob/master/image.png?raw=true)
+
 REQUIREMENTS
 ------------
 - Python 3.x
@@ -35,8 +37,4 @@ FEATURES
 - Real-time digit recognition
 - Clear button to reset canvas
 - Displays predicted digit with confidence
-
-EXAMPLE
--------
-[IMAGE: image.png]
 
