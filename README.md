@@ -8,7 +8,7 @@ DESCRIPTION
 This project uses a pre-trained ONNX model to predict handwritten digits. Users can draw digits
 on a canvas and get real-time predictions.
 
-![DIGIT RECOGNIZER] (https://github.com/srivishnuvarthan-07/digit-recognizer/blob/master/image.png)
+![DIGIT RECOGNIZER](https://github.com/srivishnuvarthan-07/digit-recognizer/blob/master/image.png)
 
 REQUIREMENTS
 ------------
